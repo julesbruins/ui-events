@@ -117,3 +117,26 @@ a:nth-of-type(12) {
 @keyframes turnaround {
   100% { transform: rotateZ(360deg); }
 }
+
+
+
+.pulse {
+  animation-name: pulse;
+  animation: pulse 0.5s ease-in;
+  animation-iteration-count: 4;
+}
+
+@keyframes pulse {
+  25%  {transform: scale(0.95);}
+  75%  {transform: scale(1.05);}  
+}
+
+
+.cut {
+  animation-name: scroll;
+  animation-duration: 2s;
+}
+
+@keyframes cut {
+  100% { transform: translate(0, 5px);}
+}

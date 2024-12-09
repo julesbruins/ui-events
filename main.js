@@ -64,3 +64,16 @@ turnaroundLink.addEventListener('animationend', turnAni)
 function turnAni () {
   turnaroundLink.classList.toggle('turnaround')
 }
+
+
+
+let pulseLink = document.querySelector('a:nth-of-type(4)')
+
+pulseLink.addEventListener('focus', pulseAni)
+pulseLink.addEventListener('animationend', pulseAni)
+
+function pulseAni () {
+  pulseLink.classList.toggle('pulse')
+}
+
+}
