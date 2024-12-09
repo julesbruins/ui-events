@@ -42,3 +42,14 @@ bibberLink.addEventListener('animationend', bibberAni)
 function bibberAni () {
 bibberLink.classList.toggle('bibber')
 }
+
+
+
+let updownLink = document.querySelector('a:nth-of-type(2)')
+
+updownLink.addEventListener('click', animatie)
+updownLink.addEventListener('animationend', animatie)
+
+function animatie () {
+  updownLink.classList.toggle('updown')
+}
