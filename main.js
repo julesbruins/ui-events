@@ -76,4 +76,25 @@ function pulseAni () {
   pulseLink.classList.toggle('pulse')
 }
 
-}
+
+
+
+// let keydownLink = document.querySelector('a:nth-of-type(5)')
+
+// keydownLink.addEventListener('keydown', keydownAni)
+// keydownLink.addEventListener('animationend', keydownAni)
+
+// function keydownAni () {
+//   keydownLink.classList.toggle('keydown')
+// }
+
+
+
+// let cutLink = document.querySelector('a:nth-of-type(5)')
+
+// cutLink.addEventListener('cut', cutAni)
+
+// function cutAni () {
+//   cutLink.classList.toggle('hidden')
+// }
+
