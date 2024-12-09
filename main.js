@@ -33,3 +33,12 @@ interaction.addEventListener('animationend', jumpHandler)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // bibberLink.classList.toggle...
+
+let bibberLink = document.querySelector('a:nth-of-type(1)')
+
+bibberLink.addEventListener('dblclick', bibberAni) 
+bibberLink.addEventListener('animationend', bibberAni)
+
+function bibberAni () {
+bibberLink.classList.toggle('bibber')
+}

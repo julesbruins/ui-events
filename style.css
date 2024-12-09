@@ -81,3 +81,14 @@ a:nth-of-type(12) {
 
 
 /* Hieronder komen jouw animaties */
+.bibber {
+  animation-name: bibber;
+  animation-duration: .5s;
+  animation-iteration-count: 3;
+}
+
+@keyframes bibber {
+  0% { transform: translate(5px); }
+  50% { transform: translate(-5px); }
+  100% { transform: translate(5px); }
+}
