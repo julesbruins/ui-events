@@ -47,9 +47,20 @@ bibberLink.classList.toggle('bibber')
 
 let updownLink = document.querySelector('a:nth-of-type(2)')
 
-updownLink.addEventListener('click', animatie)
-updownLink.addEventListener('animationend', animatie)
+updownLink.addEventListener('click', updownAni)
+updownLink.addEventListener('animationend', updownAni)
 
-function animatie () {
+function updownAni () {
   updownLink.classList.toggle('updown')
+}
+
+
+
+let turnaroundLink = document.querySelector('a:nth-of-type(3)')
+
+turnaroundLink.addEventListener('mouseover', turnAni)
+turnaroundLink.addEventListener('animationend', turnAni)
+
+function turnAni () {
+  turnaroundLink.classList.toggle('turnaround')
 }

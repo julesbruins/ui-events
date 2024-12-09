@@ -94,6 +94,7 @@ a:nth-of-type(12) {
 }
 
 
+
 .updown {
   animation-name: updown;
   animation-duration: .3s;
@@ -107,3 +108,12 @@ a:nth-of-type(12) {
 }
 
 
+
+.turnaround {
+  animation-name: turnaround;
+  animation-duration: 2s;
+}
+
+@keyframes turnaround {
+  100% { transform: rotateZ(360deg); }
+}
