@@ -147,6 +147,19 @@ a:nth-of-type(12) {
 }
 
 
+.blur {
+  animation-name: blur;
+  animation-duration: 3s;
+}
+
+@keyframes blur {
+  50% {
+    filter: blur(20px);
+    transform: skew(30deg);
+  }
+}
+
+
 .opacity {
   animation-name: opacity;
   animation-duration: 2s;

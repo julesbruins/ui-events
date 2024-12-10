@@ -106,10 +106,16 @@ function zoom(event) {
 }
 
 
+// blur -> geeft ook een blur
+let blurLink = document.querySelector('a:nth-of-type(7)')
 
-// let cutLink = document.querySelector('a:nth-of-type(5)')
+blurLink.addEventListener('blur', blurAni)
+blurLink.addEventListener('animationend', blurAni)
 
-// cutLink.addEventListener('cut', cutAni)
+function blurAni () {
+  blurLink.classList.toggle('blur')
+}
+
 
 // function cutAni () {
 //   cutLink.classList.toggle('hidden')
