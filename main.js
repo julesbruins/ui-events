@@ -34,6 +34,7 @@ interaction.addEventListener('animationend', jumpHandler)
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // bibberLink.classList.toggle...
 
+// 2x klikken -> links naar rechts
 let bibberLink = document.querySelector('a:nth-of-type(1)')
 
 bibberLink.addEventListener('dblclick', bibberAni) 
@@ -44,7 +45,7 @@ bibberLink.classList.toggle('bibber')
 }
 
 
-
+// 1x klikken -> omhoog/omlaag
 let updownLink = document.querySelector('a:nth-of-type(2)')
 
 updownLink.addEventListener('click', updownAni)
@@ -55,7 +56,7 @@ function updownAni () {
 }
 
 
-
+// met muis erover -> draaien
 let turnaroundLink = document.querySelector('a:nth-of-type(3)')
 
 turnaroundLink.addEventListener('mouseover', turnAni)
@@ -66,7 +67,7 @@ function turnAni () {
 }
 
 
-
+// focus -> in/uit zoomen
 let pulseLink = document.querySelector('a:nth-of-type(4)')
 
 pulseLink.addEventListener('focus', pulseAni)
@@ -77,16 +78,25 @@ function pulseAni () {
 }
 
 
+// key indrukken -> draai Y-as
+let keydownLink = document.querySelector('a:nth-of-type(5)')
+
+keydownLink.addEventListener('keydown', twistAni)
+keydownLink.addEventListener('animationend', twistAni)
+
+function twistAni () {
+  keydownLink.classList.toggle('twist')
+}
 
 
-// let keydownLink = document.querySelector('a:nth-of-type(5)')
+// scroll -> vergroot en verkleint
+let scale = 1;
+const el = document.querySelector('a:nth-of-type(6)')
+el.onwheel = zoom;
 
-// keydownLink.addEventListener('keydown', keydownAni)
-// keydownLink.addEventListener('animationend', keydownAni)
-
-// function keydownAni () {
-//   keydownLink.classList.toggle('keydown')
-// }
+function zoom(event) {
+  event.preventDefault();
+  scale += event.deltaY * -0.01;
 
 
 
