@@ -117,7 +117,12 @@ function blurAni () {
 }
 
 
-// function cutAni () {
-//   cutLink.classList.toggle('hidden')
-// }
+// knippen -> geeft opacity 0
+let opacityLink = document.querySelector('a:nth-of-type(8)')
+
+opacityLink.addEventListener('cut', opacityAni)
+
+function opacityAni () {
+  opacityLink.classList.toggle('opacity')
+}
 
