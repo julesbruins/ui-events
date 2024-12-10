@@ -132,10 +132,7 @@ a:nth-of-type(12) {
 }
 
 
-/* a:nth-of-type(5) {
-  display: block;
-  width: max-content;
-  opacity: 1;
+
 .twist {
   animation-name: twist;
   animation-duration: 2s;

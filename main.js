@@ -126,3 +126,22 @@ function opacityAni () {
   opacityLink.classList.toggle('opacity')
 }
 
+
+// plakken -> draaien
+let pasteLink = document.querySelector('a:nth-of-type(9)')
+
+pasteLink.addEventListener('paste', pasteAni)
+
+function pasteAni () {
+  pasteLink.classList.toggle('paste')
+}
+
+
+// klikken -> 
+let copyLink = document.querySelector('a:nth-of-type(10)')
+
+copyLink.classList.toggle('click', copyAni)
+
+function copyAni () {
+  copyLink.classList.toggle('aniCopy')
+}
